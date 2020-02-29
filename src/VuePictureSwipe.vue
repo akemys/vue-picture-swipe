@@ -26,7 +26,7 @@
 
           <div class="pswp__top-bar">
             <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button type="button" class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
             <span class="rotation-wrapper">
               <i class="material-icons" v-if=options.rotationOn @click="rotate(-90)">rotate_left</i>
