@@ -33,9 +33,9 @@
               <i class="material-icons" v-if=options.rotationOn @click="rotate(90)">rotate_right</i>
             </span>
 
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <button type="button" class="pswp__button pswp__button--share" title="Share"></button>
+            <button type="button" class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button type="button" class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
             <div class="pswp__preloader">
               <div class="pswp__preloader__icn">
                 <div class="pswp__preloader__cut">
@@ -47,9 +47,9 @@
           <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
             <div class="pswp__share-tooltip"></div>
           </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" @click='resetAngle'>
+          <button type="button" class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" @click='resetAngle'>
           </button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" @click='resetAngle'>
+          <button type="button" class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" @click='resetAngle'>
           </button>
           <div class="pswp__caption">
             <div class="pswp__caption__center"></div>
