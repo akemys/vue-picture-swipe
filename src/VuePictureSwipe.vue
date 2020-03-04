@@ -4,12 +4,17 @@
 
       <figure
           itemprop="associatedMedia"
+          style="text-align: center; display: inline-block;"
           itemscope
           itemtype="http://schema.org/ImageObject"
           v-for="(item, index) in items" :src="item.src"
           v-bind:key="index">
         <a :href="item.src" itemprop="contentUrl" :data-size="'' + item.w + 'x' + item.h" :title="item.title">
           <img :width="item.tw" :heigth="item.th" :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail"/>
+          <br>
+          <span style="color: gray" v-if="item.date">
+            {{ item.date }}
+          </span>
         </a>
       </figure>
     </div>
