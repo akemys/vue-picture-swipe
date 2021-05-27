@@ -114,6 +114,11 @@
                 localItems: this.items
             };
         },
+        watch: {
+            items(items){
+                this.localItems = items;
+            }
+        },
         mounted() {
             let that = this;
             let initPhotoSwipeFromDOM = function (gallerySelector) {
